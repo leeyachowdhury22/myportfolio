@@ -13,80 +13,60 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <style>
-    body {
-      background-color: white;
-      font-family: 'noto sans jp', sans-serif;
-      font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
-}
-
-h1, h2, h3, h4 {
-  line-height: 1.4;
-}
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-}
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-}
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c0520d87a6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!--Header-->
   <header>
-    <div>
+    <div class="container">
       <picture>
-        <source srcset="img/projects/kettle/1landing@1x.jpg" media="(max-width:767px)">
+        <source srcset="img/logo/logo@1x.jpg" media="(max-width:767px)">
         <img src="img/logo/logo@2x.jpg" alt="My Logo">
       </picture>
+      <nav>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
   <!--End Header-->
   <!--Main-->
   <main>
-    <div class="">
+    <div class="section">
+        <div class="container">
       <picture>
         <source srcset="img/projects/kettle/1landing@1x.jpg" media="(max-width:767px)">
-        <img src="img/projects/kettle/1landing@2x.jpeg" alt="kettle image">
+        <img src="img/projects/kettle/1landing@2x.jpg" alt="kettle image">
       </picture>
     </div>
+    </div>
 
-    <div class="">
+    <div class="section">
+      <div class="container">
+      <h1>Kettle</h1>
       <h2>Project Overview</h2>
       <p>
         Kettle is a responsive web app designed for people with food intolerance or allergies. 
       </p>
+    </div>
+    </div>
+    <div class="section">
+        <div class="container">
       <h2>Purpose & Context</h2>
       <p>
         This project was apart of the CareerFoundry UI design program. For this particular achievement we were asked to create a responsive web app.
       </p>
     </div>
+</div>
 
+repeat section container
     <div class="">
       <h2>Approach</h2>
       <picture>
@@ -204,7 +184,7 @@ h4 {
 
     <div class="">
       <h2>Thanks for scrolling!</h2>
-      <a href="index.html">Back</a>
+      <a href="index.html">Go to homepage</a>
     </div>
   </main>
   <!--End Main-->
@@ -223,12 +203,7 @@ h4 {
       <!--Social Media Layout and Placeholders-->
       <div>
         <a href="https://www.linkedin.com/in/leeya-chowdhury-a415531b7/">
-          <?xml version="1.0" ?>
-          <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512"
-            width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path
-              d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-80.037,399.871l0,-199.921l-66.464,0l0,199.921l66.464,0Zm239.62,0l0,-114.646c0,-61.409 -32.787,-89.976 -76.509,-89.976c-35.255,0 -51.047,19.389 -59.889,33.007l0,-28.306l-66.447,0c0.881,18.757 0,199.921 0,199.921l66.446,0l0,-111.65c0,-5.976 0.43,-11.95 2.191,-16.221c4.795,-11.935 15.737,-24.299 34.095,-24.299c24.034,0 33.663,18.34 33.663,45.204l0,106.966l66.45,0Zm-272.403,-296.321c-22.74,0 -37.597,14.95 -37.597,34.545c0,19.182 14.405,34.544 36.717,34.544l0.429,0c23.175,0 37.6,-15.362 37.6,-34.544c-0.43,-19.595 -14.424,-34.545 -37.149,-34.545Z" />
-          </svg>
+        <i class="fab fa-linkedin-in"></i>
         </a>
         <a href="https://www.behance.net/leeyachowdhury">
           <?xml version="1.0" ?>

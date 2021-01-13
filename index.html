@@ -16,31 +16,32 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c0520d87a6.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
   <!--Header-->
   <header>
-    <div>
+    <div class="container">
       <picture>
         <source srcset="img/logo/logo@1x.jpg" media="(max-width:767px)">
         <img src="img/logo/logo@2x.jpg" alt="My Logo">
       </picture>
+      <nav>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
   <!--End Header-->
   <!--Hero-->
   <main>
-    <div>
-      <div>
+    <div class="section welcome">
+      <div class="container">
         <h1>
           Hello, my name is Leeya
           <span>I'm a UI designer based in London</span>
@@ -52,16 +53,16 @@
     </div>
     <!--End Hero-->
     <!--Work-->
-    <div>
-      <div>
+    <div class="section projects">
+      <div class="container">
         <h2>My Projects</h2>
-        <div>
-          <div>
+        <div class="row">
+          <div class="column">
             <picture>
               <source srcset="img/projects/kettle/kettle@1x.jpg" media="(max-width:767px)">
               <img src="img/projects/kettle/kettle@2x.jpg" alt="Kettle cooking app">
             </picture>
-            <div>
+            <div class="column">
               <h3>Kettle</h3>
               <p>
                 Kettle is a responsive Web App designed for people with food intolerance and dietary restriction. I completed both the UX and UI processes which include: competitor’s analysis, user research, wireframes, rapid prototyping and
@@ -90,10 +91,11 @@
           </div>
         </div>
       </div>
+    </div>
   </main>
   <!--End Work-->
   <!--Footer-->
-  <footer>
+  <footer id="contact">
     <div>
       <h2>Get in Touch</h2>
       <p>

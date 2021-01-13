@@ -12,7 +12,6 @@ img{
 body {
   font-family: 'noto sans jp', sans-serif;
     background-color: white;
-    font-family: 'noto sans jp', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -43,27 +42,30 @@ h4 {
 
 a {
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
-}
-a:hover {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:visited { /* visited link */
   color: #ff7f50;
 }
-a:active { /* selected link */
-  color: #994c30;
-}
 a:hover,
 a:focus {
   color: #cc6540;
-  text-decoration: underline;
 }
+a:active { /* selected link */
+  color: #994c30;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+    text-decoration: none; /* No underlining */
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
 }
 .button.contact {
   background-color: transparent;
@@ -75,15 +77,3 @@ a:focus {
   background-color: #ff7f50;
   color: #ffffff;
 }
-
-
-
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;
