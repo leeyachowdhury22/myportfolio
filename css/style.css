@@ -4,7 +4,24 @@ Colors used:
 Primary Color (orange): rgba (219, 146, 0)
 Secondary Color (white):#ffffff
 */
-
+header {
+  background-color: #fafafa; light grey
+   padding-top: 10px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;
+   margin: 10px;
+   border-bottom: 3px solid #fafafa;
+}
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+selector {
+  position: relative;
+}
+selector {
+  float: right;
+}
 img{
   width: 100%;
 }
