@@ -35,7 +35,7 @@ img {
 body {
   font-family: 'noto sans jp', sans-serif;
   background-color: white;
-  font-size: 16px;
+  font-size: 18px;
   /* Sets the font size to 16px */
   font-weight: 300;
   /* Sets the font weight to 300 */
@@ -86,27 +86,22 @@ a:active {
   /* selected link */
   color: #994c30;
 }
-
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
-  color: #ffffff;
-  /* needed to override the default link color */
+  color: white;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
-  /* width of the border, type, color */
-  transition: 0.2s opacity;
-  text-decoration: none;
-  /* No underlining */
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
-
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
 }
+
 
 .button.contact {
   background-color: transparent;
@@ -139,6 +134,9 @@ a:active {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+#hero span {
+  display: block;
 }
 
 .center {
@@ -270,4 +268,37 @@ nav>ul>li>a {
   .col-lg-12 {
     width: 100%;
 }
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+.col-md-6 {
+  width: 50%;
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
