@@ -3,9 +3,10 @@ Colors used:
 Primary Color (orange): rgba (219, 146, 0)
 Secondary Color (white):#ffffff
 */
-*{
+* {
   box-sizing: border-box;
 }
+
 header {
   width: 100%;
   border-bottom: 3px solid #fafafa;
@@ -13,10 +14,10 @@ header {
   text-align: center;
   padding: 10px 0;
   padding-top: 10px;
-    padding-right: 0px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-position: fixed;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  position: fixed;
 }
 
 .container {
@@ -49,22 +50,22 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 1.8em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.4em;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1.3em;
   font-weight: 400;
 }
 
@@ -86,6 +87,7 @@ a:active {
   /* selected link */
   color: #994c30;
 }
+
 .button {
   display: inline-block;
   background-color: #ff7f50;
@@ -98,10 +100,10 @@ a:active {
   transition-duration: 0.2s;
   transition-property: opacity;
 }
+
 .button:hover {
   opacity: 0.8;
 }
-
 
 .button.contact {
   background-color: transparent;
@@ -129,14 +131,17 @@ a:active {
   text-align: center;
   /* Centers text */
 }
+
 #hero {
   background-color: #fafafa;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
+
 #hero span {
   display: block;
+  font-size: 0.7em
 }
 
 .center {
@@ -144,7 +149,7 @@ a:active {
 }
 
 .logo {
-  max-width: 80px;
+  max-width: 120px;
 }
 
 nav>ul {
@@ -161,9 +166,52 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 138px
+}
+
+.social a {
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.social {
+  margin-top: 1em
+}
+
+.social .fab {
+  font-size: 1.5em
+}
+
+.copyright {
+  font-size: 0.8em
+}
+
+footer {
+  text-align: center;
 }
 
 @media (min-width:768px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   [class*="col-"] {
     float: left;
     padding: 15px;
@@ -217,10 +265,38 @@ nav>ul>li>a {
     width: 100%;
   }
 }
-@media (min-width:1200px){
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==============================
+Large devices (1200px or larger)
+================================= */
+@media (min-width:1200px) {
+  .logo {
+    max-width: 120px
+  }
+
+  main {
+    padding-top: 109px
+  }
+
+  .profile img {
+    max-width: 400px;
+  }
+
   [class*="col-"] {
     padding: 20px;
   }
+
   .col-lg-1 {
     width: 8.33%;
   }
@@ -267,38 +343,61 @@ nav>ul>li>a {
 
   .col-lg-12 {
     width: 100%;
+  }
 }
-}
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
   }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
+  to {
+    fill: #f76414;
   }
 }
-.col-md-6 {
-  width: 50%;
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
 }
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+
+.cloud-front {
+  animation: 10s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 20s cloud-move-reverse infinite alternate linear;
 }
