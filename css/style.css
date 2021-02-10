@@ -11,8 +11,7 @@ header {
   width: 100%;
   border-bottom: 3px solid #fafafa;
   background-color: #fafafa;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   padding-top: 10px;
   padding-right: 0px;
   padding-bottom: 10px;
@@ -155,10 +154,11 @@ a:active {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
 nav>ul>li>a {
@@ -168,9 +168,34 @@ nav>ul>li>a {
   color: #4a4a4a;
   text-decoration: none;
 }
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
 
+.navtoggle li .icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 main {
-  padding-top: 138px
+  padding-top: 97px
 }
 
 .social a {
@@ -194,10 +219,26 @@ footer {
   text-align: center;
 }
 
-@media (min-width:768px) {
+@media (min-width:641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+
+    nav>ul>li {
+      display: inline-block;
+
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+
+        .navtoggle li:last-child {
+          display: none;
+
+          nav>ul {
+            margin: 1em 0;
+          }
+        }
+      }
+    }
   }
 
   nav {
@@ -344,60 +385,4 @@ Large devices (1200px or larger)
   .col-lg-12 {
     width: 100%;
   }
-}
-
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-
-  to {
-    fill: #f76414;
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 10s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 20s cloud-move-reverse infinite alternate linear;
 }
