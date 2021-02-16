@@ -19,6 +19,7 @@ header {
   position: fixed;
 }
 
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -94,7 +95,7 @@ a:active {
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
   border-bottom: 2px solid #994c30;
   transition-duration: 0.2s;
   transition-property: opacity;
@@ -207,9 +208,7 @@ main {
   margin-top: 1em
 }
 
-.social .fab {
-  font-size: 1.5em
-}
+
 
 .copyright {
   font-size: 0.8em
@@ -223,23 +222,23 @@ footer {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
 
     nav>ul>li {
       display: inline-block;
+    }
 
       .navtoggle li:not(:last-child) {
         display: inline-block;
+      }
 
         .navtoggle li:last-child {
           display: none;
+        }
 
           nav>ul {
             margin: 1em 0;
           }
-        }
-      }
-    }
-  }
 
   nav {
     width: auto;
