@@ -13,9 +13,7 @@ header {
   background-color: #fafafa;
   padding: 10px 0 4px;
   padding-top: 10px;
-  padding-right: 0px;
   padding-bottom: 10px;
-  padding-left: 0px;
   position: fixed;
   box-shadow: 0px 4px 8px 0px rgb(47 47 47 / 10%);
 }
@@ -42,11 +40,19 @@ body {
   color: #4a4a4a;
 }
 
+.project-page p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container .p {
   text-align: center;
 }
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -115,7 +121,7 @@ a:active {
 
 .button.contact:hover {
   background-color: #ff7f50;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Layout styling */
@@ -125,12 +131,10 @@ a:active {
 
 .row {
   margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
 }
 
 #hero h1 {
   text-align: center;
-  /* Centers text */
 }
 
 #hero {
@@ -142,7 +146,7 @@ a:active {
 
 #hero span {
   display: block;
-  font-size: 0.7em
+  font-size: 0.7em;
 }
 
 .center {
@@ -153,7 +157,7 @@ a:active {
   max-width: 120px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -163,7 +167,7 @@ nav>ul {
   display: none;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -201,7 +205,7 @@ nav>ul>li>a {
 }
 
 main {
-  padding-top: 97px
+  padding-top: 97px;
 }
 
 .social a {
@@ -210,11 +214,11 @@ main {
 }
 
 .social {
-  margin-top: 1em
+  margin-top: 1em;
 }
 
 .copyright {
-  font-size: 0.8em
+  font-size: 0.8em;
 }
 
 footer {
@@ -226,13 +230,13 @@ footer {
   padding-top: 10px;
 }
 
-@media (min-width:641px) {
+@media (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -244,7 +248,7 @@ footer {
     display: none;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
@@ -317,9 +321,9 @@ footer {
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px)
 
-.container {
+ .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -328,13 +332,13 @@ Large devices (1024px or larger)
 /* ==============================
 Large devices (1200px or larger)
 ================================= */
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .logo {
-    max-width: 120px
+    max-width: 120px;
   }
 
   main {
-    padding-top: 109px
+    padding-top: 109px;
   }
 
   .profile img {
