@@ -1,8 +1,4 @@
-/*
-Colors used:
-Primary Color (orange): rgba (219, 146, 0)
-Secondary Color (white):#ffffff
-*/
+
 * {
   box-sizing: border-box;
 }
@@ -33,7 +29,7 @@ img {
 
 body {
   font-family: 'raleway', sans-serif;
-  background-color: white;
+  background-color: #fafafa;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.3;
@@ -133,7 +129,7 @@ a:active {
   margin: 25px 0;
 }
 
-#hero h1 {
+#hero h1, #hero p, #work h2 {
   text-align: center;
 }
 
@@ -321,14 +317,13 @@ footer {
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px)
+@media only screen and (min-width: 1024px){
 
  .container {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-
+}
 /* ==============================
 Large devices (1200px or larger)
 ================================= */
@@ -336,7 +331,6 @@ Large devices (1200px or larger)
   .logo {
     max-width: 120px;
   }
-
   main {
     padding-top: 109px;
   }
