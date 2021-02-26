@@ -1,8 +1,4 @@
-/*
-Colors used:
-Primary Color (orange): rgba (219, 146, 0)
-Secondary Color (white):#ffffff
-*/
+
 * {
   box-sizing: border-box;
 }
@@ -49,10 +45,7 @@ body {
 .container .p {
   text-align: center;
 }
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
   line-height: 1.4;
 }
 
@@ -81,7 +74,6 @@ a {
 }
 
 a:visited {
-  /* visited link */
   color: #ff7f50;
 }
 
@@ -133,7 +125,12 @@ a:active {
   margin: 25px 0;
 }
 
-#hero h1 {
+#main h1{
+  text-align: center;
+  font-weight: 700;
+}
+
+#hero h1, #hero p, #work h2 {
   text-align: center;
 }
 
@@ -149,6 +146,10 @@ a:active {
   font-size: 0.7em;
 }
 
+#main h1{
+  text-align: center;
+  font-weight: 700;
+}
 .center {
   text-align: center;
 }
@@ -235,7 +236,9 @@ footer {
     text-align: unset;
     padding: 20px 0 13px;
   }
-
+  .profile img {
+    max-width: 400px;
+  }
   nav > ul > li {
     display: inline-block;
   }
@@ -321,14 +324,16 @@ footer {
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px)
+@media only screen and (min-width: 1024px){
 
  .container {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-
+.container.small {
+  max-width: 900px;
+}
+}
 /* ==============================
 Large devices (1200px or larger)
 ================================= */
@@ -336,14 +341,10 @@ Large devices (1200px or larger)
   .logo {
     max-width: 120px;
   }
-
   main {
     padding-top: 109px;
   }
 
-  .profile img {
-    max-width: 400px;
-  }
 
   [class*="col-"] {
     padding: 20px;
