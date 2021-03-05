@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 header {
   width: 100%;
@@ -192,13 +195,12 @@ nav > ul > li > a {
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding:  0 0;
 }
 
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -220,6 +222,12 @@ main {
 
 .copyright {
   font-size: 0.8em;
+  padding: 1em 0;
+  margin: 0;
+}
+
+.section {
+  padding-bottom: 40px;
 }
 
 footer {
@@ -321,9 +329,6 @@ footer {
   }
 }
 
-/* ==============================
-Large devices (1024px or larger)
-================================= */
 @media only screen and (min-width: 1024px){
 
  .container {
